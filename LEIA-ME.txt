@@ -1,0 +1,29 @@
+AUTOPASSAPORTE — V12 FINAL / BASE V7
+
+Esta versão foi reconstruída a partir da V7, mantendo o Passaporte que funcionava e reorganizando a interface para ficar mais simples.
+
+Principais mudanças:
+- Interface redesenhada, com menos informação na tela inicial.
+- Navegação por telas: Início, Histórico e Documentos.
+- Menu desktop e menu mobile independentes e sem sobreposição.
+- Cadastro de novos veículos totalmente desbloqueado para teste.
+- Cada veículo possui seu próprio histórico.
+- Adicionar, editar e excluir veículos.
+- Adicionar, editar e excluir manutenções.
+- Anexar e visualizar comprovantes JPG/PNG/PDF.
+- Passaporte Digital com geração de PDF/impressão.
+- Compartilhamento por link e QR Code.
+- QR Code leva para uma versão pública do histórico e não inclui os arquivos dos comprovantes.
+- Dados locais continuam usando localStorage com a chave da V7, para preservar registros já existentes nesse navegador.
+
+IMPORTANTE SOBRE O QR CODE:
+Esta é uma versão estática para teste. O QR Code coloca os dados do veículo e do histórico dentro do próprio link. Para uso real em produção, o ideal é trocar isso por um banco de dados e um endereço público curto, por exemplo /p/abc123. Assim, o QR Code continuaria o mesmo mesmo quando o proprietário adicionasse novas manutenções.
+
+COMO TESTAR:
+1. Abra o index.html em um navegador.
+2. Cadastre/edite o veículo.
+3. Registre manutenções e anexe comprovantes.
+4. Clique em Compartilhar e teste o QR Code/link.
+5. Clique em Passaporte para visualizar e gerar o relatório.
+
+Observação: QR Code e PDF usam bibliotecas externas carregadas por CDN, então esses dois recursos precisam de internet quando o arquivo é aberto.
