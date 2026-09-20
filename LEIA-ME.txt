@@ -1,0 +1,18 @@
+AUTOPASSAPORTE V15 - SUPABASE / GITHUB PAGES
+
+Esta versão usa como retorno do OAuth o endereço de produção:
+https://ygoralvesaraujo.github.io/AutoPassaporte/
+
+IMPORTANTE NO SUPABASE:
+Authentication > URL Configuration
+Site URL:
+https://ygoralvesaraujo.github.io/AutoPassaporte/
+
+Em Redirect URLs, adicione:
+https://ygoralvesaraujo.github.io/AutoPassaporte/
+https://ygoralvesaraujo.github.io/AutoPassaporte/?reset=1
+
+O callback do Google continua sendo:
+https://nwgzgqoxgevmkcuzigsx.supabase.co/auth/v1/callback
+
+Não coloque a chave secreta do Supabase no código.
